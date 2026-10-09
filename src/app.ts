@@ -18,10 +18,12 @@ const products = [
   },
 ];
 
-const app = http.createServer((request, response)=>{
-    if(request.method === "GET" && request.url === "/products"){
-        response.end(JSON.stringify(products))
-    }
-})
+const app = http.createServer((request, response) => {
+  if (request.method === "GET" && request.url === "/products") {
+    response.setHeader("Content-Type", "application/json");
 
-export {app}
+    response.end(JSON.stringify(products));
+  }
+});
+
+export { app };
