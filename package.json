@@ -9,5 +9,10 @@
   "license": "ISC",
   "dependencies": {
     "tsx": "^4.19.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.2.5"
   }
 }
