@@ -1,3 +1,3 @@
-test("exemple", () => {
-  console.log("ok");
+test("sum", () => {
+  console.log("test sum ok!");
 });
